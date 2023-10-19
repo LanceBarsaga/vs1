@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HOME</title>
+
+<link rel="stylesheet" href="/css/navigator.css">
+<link rel="stylesheet" href="/css/background.css">
+<link rel="stylesheet" href="/css/home.css">
+
+</head>
+<body>
+
+<nav class="header">
+    <a href="#default" class="logo">AKO LANG TO</a>
+  <div class="header-right">
+    <a class="active" href="#/lance/HOME.html">HOME</a>
+    <a href="/lance/ABOUT.html">ABOUT</a>
+    <a href="/lance/CONTACT.html">CONTACT</a>
+  </div>
+</nav>
+
+<!--------------------HOME------------------------->
+<div>
+  <div class="head">
+      <h1><u>HOME</u></h1>
+  </div>
+    <div class="hello">  
+        <h2>HELLO!<br> I'M LANCE IAN</h2>
+        <p1>I am Lance Ian D. Barsaga
+        Bachelor of Science in Information Technology
+        2nd Year College in olivarez College Paranaque. 
+      </p1>  
+    </div>
+   
+   <script>
+    function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("img").src = images[x];
+          }
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("img").src = images[x];
+          }
+          function startTimer() {
+              setInterval(displayNextImage, 3000);
+          }
+          var images = [], x = -1;
+          images[0] = "/image/personal3.png";
+          images[1] = "/image/personal2.jpg";
+          images[2] = "/image/personal1.jpg";
+  </script>
+
+  <body onload = "startTimer()">
+    <img id="img" src="/image/personal1.jpg"alt="picture"
+    style="width:400px;height:500px">
+</div>
+<!--------------------FOOTER------------------------->
+<div class="footer">
+  <p><marquee>THANK YOU FOR VISITING MY PERSONAL WEBSITE. HAVE A NICE DAY!</marquee></p>
+  
+  <p>If you're looking to work with me or want to grab some coffee, feel free to email me at<br>
+    <a href="mailto:lanceian.barsaga@olivarezcollege.edu.ph? subject=Hey!" target="_blank"
+    rel="noopener">lanceian.barsaga@olivarezcollege.edu.ph</a></p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+div.relative {
+    position: relative;
+    width: 650px;
+    height: 310px;
+    color: #ffffff;
+    font-size: 15px;
+    float: right;
+    margin-left: 15px;
+}
+img {
+    float:left;
+    margin-right: 100px;
+    
+  }
+        
